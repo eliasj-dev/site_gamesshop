@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header, 
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal; /*retirando a definição padrão do css do navegador para font */
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    padding: 16px 0;/*espaçamento interno*/
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li{
+    display: inline; /*tirar a quebra de linha e deixar os elementos lado a lado*/
+    margin-left: 16px;
+    font-size: 18px;/*tamanho da fonte */
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none; /*remover o underline*/
+}
+
+.container {
+    max-width: 1280px; /* Largura máxima,*/
+    width: 100%; /* Ocupar 100% da largura até chegar 1200px */
+    margin: 0 auto; /* Centralizar, para nâo ficar em nenhuma extremidade*/
+}
+
+header .container,
+section .container{
+    display: flex; /* Deixar o conteudo lado a lado */
+    align-items: center; /*alinhar o conteúdo verticalmente */
+    justify-content: space-between; /* centralizar nas extremidades */
+}
+
+.brands-list img {
+    height: 24px; /*altura das imagens*/
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container { /* cascata: sobrescrever uma regra*/
+    align-items: flex-start; /* itens alinhados começando pelo topo */
+}
+
+section {
+    padding: 24px 0; /*espaço superior e inferior e laterais do inicio da seção */
+}
+
+section h2 {
+    margin-bottom: 16px ; /*margin do título */
+}
+
+section{
+    color: #182c61;
+}
+section p {
+    margin-bottom: 10px; /* margin do parágrafo */
+}
+
+section .store-front {
+    margin-right: 32px; /*margin direita img */
+}
+
+.social-links img {
+    height: 24px; 
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block; /*elementos organizados em quebra de linhas*/
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+button {
+        display: block; 
+        width: 320px;
+        margin-bottom: 8px;
+        padding: 8px; /*espaçamento interno*/
+}
+
+form textarea {
+    resize: none; /*retirar o redimensionamento do texteara*/
+    height: 180px; /*tamanho do texteara*/
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none; /*retirando a borda do botão*/
+    cursor: pointer; /*mudar a forma do cursor ao passar sobre*/
+}
+
+form button:hover{ /*seletor para mudança de cor ao passar maouse sobre o botão*/
+    background-color: #4564b9;
+}
+
+input:focus, textarea:focus{ /*Mudanda a cor da outline*/
+    outline-color: #182c61; 
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
